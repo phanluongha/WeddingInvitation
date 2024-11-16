@@ -1167,7 +1167,7 @@
                                     <small class="editable" id="thanks_couple-info_bride-draf_1">The Bride</small>
                                 </h3>
                                 <p>
-                                </p><p class="editable font-style-h4 " id="thanks_couple-info_bride-info_invitation">Là một người hay cười,vui vẻ, thích đi du lịch và mua sắm. Luôn yêu thương gia đình
+                                </p><p class="editable font-style-h4 " id="thanks_couple-info_bride-info_invitation">Là một người hay cười, vui vẻ, thích đi du lịch và mua sắm. Luôn yêu thương gia đình
                                 </p>
                                 <a class="button-see hidden" data-src="/storage/gl0YhX1B70.webp" data-content="Là một người hay cười, vui vẻ,thích đi du lịch và mua sắm.Luôn yêu thương gia đình" data-instagram="" data-twitter="" data-facebook="" data-name="Lan Anh" style="font-size:14px;cursor: pointer">Xem
                                     thêm<i class="bi bi-arrow-down-short"></i>
@@ -1520,7 +1520,7 @@
                                                 <h4 class="editable super-break font-h4" id="story_title_2">
                                                     Tình yêu..</h4>
                                                 <p class="editable super-break font-opensans" id="story_content_2">
-                                                    Thời điểm đó, chúng mình đều đang độc thân. Hà làm việc ở nhà và rất ế. Cơ hội gặp nhau hầu như không có.Nhưng vào một ngày, Lan Anh đã trả lời tin nhắn của Hà . Rồi tới 1 ngày đặc biệt, khi cả 2 đã suy nghĩ đủ kỹ về mối quan hệ, thì chúng mình đã quyết định nói hết cảm xúc của mình với đối phương. Và sau ngày định mệnh đó, đã có " Chúng mình của hiện tại"</p>
+                                                    Thời điểm đó, chúng mình đều đang độc thân. Hà làm việc ở nhà và rất ế. Cơ hội gặp nhau hầu như không có. Nhưng vào một ngày, Lan Anh đã vô tình gửi nhầm tin nhắn cho Hà. Rồi tới 1 ngày đặc biệt, khi cả 2 đã suy nghĩ đủ kỹ về mối quan hệ, thì chúng mình đã quyết định nói hết cảm xúc của mình với đối phương. Và sau ngày định mệnh đó, đã có "Chúng mình của hiện tại"</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2028,7 +2028,7 @@
             font-family: "Open Sans", sans-serif;
         }
     </style>
-<section id="giftregistry" class="parallax-background section-bg-color editable-parent scroll-to " style="background-image: url(&quot;https://thiepcuoionline.huythanhjewelry.vn/images/large.webp&quot;); background-position: center 505px;">
+<section id="giftregistry" class="parallax-background section-bg-color editable-parent scroll-to " style="background-image: url(&quot;./LuongHa-LanAnh_files/1731421337_NHAT6413.webp&quot;); background-position: center 505px;">
     <div class="toggle-wrap">
     <input class="toggle toggle-ios" id="isActiveGiftRegistrySection" type="checkbox" checked="">
     <label class="toggle-btn" for="isActiveGiftRegistrySection"></label>
@@ -3511,7 +3511,40 @@
     }
     // applyConfig('gift-box_box_bride_img');
     // applyConfig('gift-box_box_groom_img');
+	$(document).ready(function() {
+	    var params = new window.URLSearchParams(window.location.search);
+	    var id = Number(params.get('id'));
+		var name = "Bạn";
+		var preName = "Qúy Vị"
+        switch (id) {
+				case 1 : preName = "Gia đình Chị" ; name = "Gia đình Chị Duyên"; break;
+				case 2 : preName = "Gia đình Chị" ; name = "Gia đình Chị Ngọc"; break;
+				case 3 : preName = "Gia đình Chị" ; name = "Gia đình Chị Trang"; break;
+				case 4 : preName = "Gia đình Anh" ; name = "Gia đình Anh Tiến"; break;
+				case 5 : preName = "Gia đình Anh" ; name = "Gia đình Anh Tiến"; break;
+				case 6 : preName = "Gia đình Anh" ; name = "Gia đình Anh Cọt"; break;
+				case 7 : preName = "Gia đình Tí" ; name = "Gia đình Tí"; break;
+				case 8 : preName = "Gia đình bạn" ; name = "Gia đình Bạn Tiền"; break;
+				case 9 : preName = "Gia đình bạn" ; name = "Gia đình Bạn Vũ"; break;
+			}
+		$("#guest-name span").text(name);
+        $("#pre-guest-name").text("Sự hiện diên của "+preName+" là niềm vinh hạnh của gia đình. Xin cám ơn và trân trọng được đón tiếp !");		
+    });
 </script>
+<div class="row">
+                <div class="about-us-desc col-lg-8 offset-lg-2 animate-from-bottom animation-from-bottom" style="margin-top:30px; margin-bottom:100px" data-animation-direction="from-bottom" data-animation-delay="300">
+                    <h3 class="editable" id="couple_title_1">Trân trọng kính mời
+                    </h3>
+					<p class="groom-bride-signature" id="guest-name">
+                        <span>Bạn</span>
+                    </p>
+				
+                    <p class="editable font-style-h4"  id="pre-guest-name">
+                        Sự hiện diên của Quý Vị là niềm vinh hạnh của gia đình. Xin cám ơn và trân trọng được đón tiếp !</p>
+                    
+                    <!--<img src="https://nhuhuy-tuyetmai.iwedding.info/templates/template19/images/signature-2.png" alt="Andrew and Isabella"> -->
+                </div>
+            </div>
     <footer id="footer-onepage" class="bg-color">
     <div class="footer-widget-area">
         <div class="container">
